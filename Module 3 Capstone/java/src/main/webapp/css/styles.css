@@ -1,0 +1,280 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+
+@import
+	url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+
+@import
+	url('https://fonts.googleapis.com/css?family=Martel+Sans&display=swap')
+	;
+
+/*** colors and globals ***/
+:root { 
+	--park-green: #008040; 
+	--robin-egg: #317e95;
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5 {
+	padding-left: 20px;
+}
+
+h2 {
+	font-size: 32px;
+	color: #808000;
+}
+
+/*** header ***/
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+ 	background-color: #d1cec0; 
+/*	background-image: url("../img/pawprints.jpg") */
+}
+
+header h1 {
+	margin: 0;
+}
+
+header h1 a {
+	font-family: 'Martel Sans', sans-serif;
+	text-decoration: none;
+	font-size: 1.6rem;
+	color: var(- -park-green);
+	padding: 10px 20px 10px 0;
+}
+
+header ul {
+	background-color: #9ac56b;
+	padding: 10px 30px 10px 30px;
+	margin: 0;
+}
+
+header ul li {
+	list-style-type: none;
+	display: inline-block;
+	padding-right: 20px;
+}
+
+header ul li a {
+	text-decoration: none;
+	color: green;
+}
+
+header ul li a:hover {
+	color: white;
+}
+
+/*** main areas ***/
+main {
+	margin: 0;
+}
+
+section {
+	background-color: #FFFFFF;
+	width: 80%;
+	margin: auto;
+	/*	max-height: 90%;
+	box-shadow: 5px 5px 2px darkgrey; */
+}
+
+/***  home page  ***/
+div.parks {
+	display: flex;
+}
+
+div.parks img {
+	margin: 0;
+	border-radius: 35px;
+	max-width: 340px;
+	max-height: 280px;
+	padding: 20px;
+}
+
+div.description {
+	padding-right: 30px;
+}
+
+p#park-description {
+	height: 150px; overflow : hidden;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.parks h3 {
+	padding-top: 10px;
+	padding-left: 0;
+}
+
+.parks h3 a {
+	text-decoration: none;
+	color: green;
+}
+
+/***  park detail page  ***/
+section.park-detail h3 {
+	padding: 10px 20px;
+}
+
+div.detail-content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+div.detail-main {
+	padding: 20px;
+}
+
+div.detail-content img {
+	width: 30%;
+	padding: 10px 20px 10px 30px;
+}
+
+p.detail-desc {
+	width: 50%;
+	padding: 20px 20px 20px 10px;
+}
+
+div.stats {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+div.detail-left p, div.detail-right p {
+	margin: 0 30px;
+	padding: 10px 30px 10px 10px;
+}
+
+.quote-box {
+	border: double;
+	margin: 30px;
+	width: 80%;
+	background-color: #bbdab1;
+}
+
+p.quote {
+	font-family: 'Amatic SC', cursive; font-size : 48px;
+	padding: 0 40px;
+	font-size: 48px;
+}
+
+.fas {
+	color: #e0eedb;
+	text-shadow: 3px 2px #cccccc !important;
+}
+
+.forecast-link {
+	text-align: center;
+	padding: 10px;
+}
+
+.forecast-link h3 {
+	font-size: 1.5rem;
+}
+
+.forecast-link h3 a {
+	color: var(--park-green);
+	text-decoration: none;
+}
+
+/***  survey form page  ***/
+.surveyForm div {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	justify-content: center;
+}
+
+.surveyForm form {
+	padding: 30px 50px;
+}
+
+.surveyForm label {
+	padding-right: 10px;
+}
+
+.submit {
+	padding: 10px;
+}
+
+/***  survey results page  ***/
+div.results {
+	display: flex;
+}
+
+div.results img {
+	margin: 0;
+	border-radius: 35px;
+	max-width: 340px;
+	max-height: 280px;
+	padding: 20px;
+}
+
+div.description {
+	padding-right: 30px;
+}
+
+div.results p.survey-desc {
+	padding-right: 30px;
+	height: 40px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+p#read-more a {
+	text-decoration: none;
+	color: green;
+}
+
+.results h3 {
+	padding-top: 10px;
+	padding-left: 0;
+}
+
+.results h3 a {
+	text-decoration: none;
+	color: green;
+}
+
+div.votes {
+	display: inline-block;
+	border-radius: 50%;
+	margin: 0 10px 10px 10px;
+	background-color: gold;
+}
+
+div.votes p {
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+	padding: 0 10px;
+}
+
+/***  weather forecast page  ***/
+div.forecast {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 20px;
+}
+
+.forecast h1, h2 {
+	padding: 20px 10px 0 20px;
+	margin: auto;
+}
+
+div.days {
+	padding: 0 20px 10px 0;
+}
+
+/***  footer  ***/
+footer {
+	margin-top: 30px;
+	color: #ffffff;
+	text-align: right;
+	padding: 30px 50px;
+	background-color: var(--robin-egg);
+}
